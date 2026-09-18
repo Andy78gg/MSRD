@@ -3,90 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>佛山梅斯睿蒂科技有限公司</title>
+    <title>梅斯睿蒂maysruidy</title>
+    <meta name="keywords" content="佛山梅斯睿蒂maysruidy全塑分集水器，耦合罐，不锈钢分水器，佛山梅斯睿蒂科技，佛山梅斯睿蒂科技有限公司，塑料分水器，不锈钢分水器，阀门配件，水暖器材，塑料制品，五金配件，水暖安装工具，水暖产品检测设备">
+    <meta name="description" content="佛山梅斯睿蒂有限公司致力于供暖系统配套产品的研发、生产和销售。我公司主要经营研发、生产、销售：塑料分水器、不锈钢分水器，团队最近研发的模块式PPO全塑分集水器，再一次吸引地暖人的眼光，引起同行强烈的反应。该款分集水器源自欧洲最新塑料应用专利技术，采用进口著名品牌原料，先进合理的结构和生产工艺，使其质量远远优于铜质分集水器。">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: "Microsoft YaHei", Arial, sans-serif; line-height: 1.6; color: #333; background: #f5f5f5; }
-
-        /* 顶部导航 */
-        .top-bar { background: #1e6fd9; color: #fff; padding: 8px 0; font-size: 13px; }
-        .top-bar .container { display: flex; justify-content: space-between; align-items: center; }
-        .top-bar a { color: #fff; text-decoration: none; margin-left: 15px; }
+        body { font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; line-height: 1.6; color: #333; background: #f5f6f8; }
 
         .container { width: 90%; max-width: 1200px; margin: 0 auto; }
 
+        /* 顶部信息栏 */
+        .top-bar { background: #1e50ae; color: #fff; padding: 8px 0; font-size: 13px; }
+        .top-bar .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px; }
+        .top-bar a { color: #fff; text-decoration: none; margin-left: 15px; }
+        .top-bar a:hover { text-decoration: underline; }
+
         /* 头部横幅 */
-        .header-banner { background: #fff; padding: 30px 0; text-align: center; border-bottom: 3px solid #1e6fd9; }
-        .header-banner .brand-logo { font-size: 28px; color: #222; letter-spacing: 4px; margin-bottom: 8px; font-weight: bold; }
-        .header-banner .brand-slogan { font-size: 18px; color: #1e6fd9; letter-spacing: 2px; }
+        .header-banner { background: #fff; padding: 26px 0; text-align: center; border-bottom: 3px solid #1e50ae; }
+        .header-banner .brand-logo { font-size: 28px; color: #1a2b52; letter-spacing: 4px; margin-bottom: 6px; font-weight: bold; }
+        .header-banner .brand-slogan { font-size: 17px; color: #1e50ae; letter-spacing: 2px; }
         .header-banner .brand-sub { font-size: 14px; color: #666; margin-top: 8px; }
 
-        /* 质量标语横幅 */
-        .quality-banner { background: #fff; padding: 40px 0; text-align: center; border-bottom: 1px solid #eee; }
-        .quality-banner .en-title { font-size: 22px; color: #333; letter-spacing: 3px; margin-bottom: 15px; font-weight: normal; }
-        .quality-banner .cn-title { font-size: 48px; font-weight: bold; color: #222; letter-spacing: 8px; margin-bottom: 15px; }
-        .quality-banner .cn-title .highlight { color: #1e6fd9; }
-        .quality-banner .tip { font-size: 16px; color: #555; letter-spacing: 2px; }
-
-        /* 特性标签 */
-        .features { background: #fff; padding: 30px 0; border-bottom: 1px solid #eee; }
-        .features .feature-list { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
-        .feature-item { text-align: center; }
-        .feature-item .icon { width: 50px; height: 50px; background: #1e6fd9; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; margin: 0 auto 10px; }
-        .feature-item .label { font-size: 14px; color: #333; font-weight: bold; }
+        /* 主视觉横幅（复刻官网 Banner） */
+        .hero-banner {
+            position: relative; overflow: hidden;
+            background: #123a6b url("images/banner-bg.jpg") center/cover no-repeat;
+            min-height: 520px;
+            display: flex; align-items: center;
+        }
+        .hero-banner::before {
+            content: ""; position: absolute; inset: 0;
+            background: linear-gradient(90deg, rgba(10, 30, 70, 0.82) 0%, rgba(10, 30, 70, 0.45) 55%, rgba(10, 30, 70, 0.15) 100%);
+        }
+        .hero-banner .container { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; padding: 60px 0; }
+        .hero-left { flex: 1 1 420px; color: #fff; }
+        .hero-left .hero-slogan { font-size: 30px; font-weight: bold; letter-spacing: 3px; margin-bottom: 24px; text-shadow: 0 2px 8px rgba(0,0,0,0.35); }
+        .hero-features { display: flex; gap: 34px; flex-wrap: wrap; }
+        .hero-feature { text-align: center; }
+        .hero-feature .icon {
+            width: 60px; height: 60px; margin: 0 auto 10px; border-radius: 50%;
+            background: rgba(255, 255, 255, 0.16); border: 1px solid rgba(255, 255, 255, 0.45);
+            display: flex; align-items: center; justify-content: center;
+            backdrop-filter: blur(2px);
+        }
+        .hero-feature .icon img { width: 30px; height: 30px; display: block; }
+        .hero-feature .label { font-size: 16px; letter-spacing: 2px; font-weight: bold; }
+        .hero-right { flex: 0 0 auto; }
+        .hero-right img { display: block; width: 380px; max-width: 100%; border-radius: 10px; box-shadow: 0 12px 34px rgba(0,0,0,0.35); background: #fff; }
 
         /* 产品分类标签 */
-        .category-tabs { background: #1a3a5c; padding: 0; }
+        .category-tabs { background: #1a2b52; padding: 0; }
         .category-tabs .tab-list { display: flex; justify-content: center; flex-wrap: wrap; }
-        .category-tabs .tab { padding: 15px 40px; color: #fff; font-size: 16px; cursor: pointer; transition: background 0.3s; border-right: 1px solid #244d75; }
+        .category-tabs .tab {
+            padding: 14px 36px; color: #fff; font-size: 15px; cursor: pointer;
+            transition: background 0.3s; border-right: 1px solid #2c4070; user-select: none;
+        }
         .category-tabs .tab:last-child { border-right: none; }
-        .category-tabs .tab:hover, .category-tabs .tab.active { background: #1e6fd9; }
+        .category-tabs .tab:hover, .category-tabs .tab.active { background: #1e50ae; }
 
         /* 产品展示区 */
-        .products-section { padding: 40px 0; background: #fff; }
+        .products-section { padding: 46px 0; background: #fff; }
         .section-title { text-align: center; margin-bottom: 30px; }
-        .section-title h2 { font-size: 28px; color: #1a3a5c; margin-bottom: 10px; }
-        .section-title .line { width: 60px; height: 3px; background: #1e6fd9; margin: 0 auto; }
+        .section-title h2 { font-size: 28px; color: #1a2b52; margin-bottom: 10px; }
+        .section-title .line { width: 60px; height: 3px; background: #1e50ae; margin: 0 auto; }
+        .section-title .sub { color: #888; margin-top: 10px; font-size: 14px; letter-spacing: 1px; }
 
-        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; }
-        .product-card { background: #fff; border: 1px solid #eee; border-radius: 8px; overflow: hidden; transition: box-shadow 0.3s, transform 0.3s; }
-        .product-card:hover { box-shadow: 0 8px 25px rgba(30, 111, 217, 0.15); transform: translateY(-3px); }
-        .product-card .img-wrap { width: 100%; height: 220px; overflow: hidden; background: #f9f9f9; }
-        .product-card .img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 26px; }
+        .product-card {
+            background: #fff; border: 1px solid #eef0f4; border-radius: 10px; overflow: hidden;
+            transition: box-shadow 0.3s, transform 0.3s; animation: fadeUp 0.4s ease both;
+        }
+        .product-card:hover { box-shadow: 0 10px 28px rgba(30, 80, 174, 0.14); transform: translateY(-4px); }
+        .product-card .img-wrap { width: 100%; padding-top: 100%; position: relative; background: #fff; overflow: hidden; }
+        .product-card .img-wrap img {
+            position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain;
+            transition: transform 0.35s; padding: 8px;
+        }
         .product-card:hover .img-wrap img { transform: scale(1.05); }
-        .product-card .info { padding: 18px; text-align: center; }
-        .product-card .info h3 { font-size: 16px; color: #333; margin-bottom: 8px; }
-        .product-card .info .desc { font-size: 13px; color: #888; line-height: 1.5; }
+        .product-card .info { padding: 14px 16px 18px; text-align: center; border-top: 1px solid #f3f4f7; }
+        .product-card .info h3 { font-size: 15px; color: #2a3550; font-weight: bold; }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
         /* 公司介绍区 */
-        .about-section { background: #f8f9fa; padding: 50px 0; }
-        .about-content { display: flex; gap: 40px; align-items: center; flex-wrap: wrap; }
+        .about-section { background: #f8f9fc; padding: 52px 0; }
+        .about-content { display: flex; gap: 44px; align-items: center; flex-wrap: wrap; }
         .about-img { flex: 1; min-width: 300px; }
-        .about-img img { width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        .about-text { flex: 1.5; min-width: 300px; }
-        .about-text h2 { font-size: 26px; color: #1a3a5c; margin-bottom: 15px; }
-        .about-text .welcome { color: #1e6fd9; font-weight: bold; margin-bottom: 15px; font-size: 15px; }
-        .about-text p { color: #555; text-align: justify; margin-bottom: 12px; line-height: 1.8; }
+        .about-img img { width: 100%; border-radius: 10px; box-shadow: 0 6px 20px rgba(0,0,0,0.10); display: block; }
+        .about-text { flex: 1.4; min-width: 300px; }
+        .about-text h2 { font-size: 26px; color: #1a2b52; margin-bottom: 12px; }
+        .about-text .welcome { color: #1e50ae; font-weight: bold; margin-bottom: 16px; font-size: 15px; letter-spacing: 1px; }
+        .about-text p { color: #555; text-align: justify; margin-bottom: 12px; line-height: 1.9; font-size: 14.5px; }
 
         /* 新闻资讯区 */
-        .news-section { padding: 50px 0; background: #fff; }
-        .news-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 25px; }
-        .news-item { border: 1px solid #eee; border-radius: 8px; overflow: hidden; transition: box-shadow 0.3s; }
-        .news-item:hover { box-shadow: 0 5px 15px rgba(30, 111, 217, 0.12); }
-        .news-item .news-img { width: 100%; height: 180px; overflow: hidden; }
+        .news-section { padding: 52px 0; background: #fff; }
+        .news-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 26px; }
+        .news-item {
+            border: 1px solid #eef0f4; border-radius: 10px; overflow: hidden;
+            background: #fff; transition: box-shadow 0.3s;
+        }
+        .news-item:hover { box-shadow: 0 6px 18px rgba(30, 80, 174, 0.12); }
+        .news-item .news-img { width: 100%; height: 180px; overflow: hidden; background: #f6f7fa; }
         .news-item .news-img img { width: 100%; height: 100%; object-fit: cover; }
-        .news-item .news-body { padding: 15px; }
+        .news-item .news-body { padding: 16px 18px 20px; }
         .news-item .news-date { font-size: 12px; color: #999; margin-bottom: 8px; }
-        .news-item .news-title { font-size: 15px; color: #333; font-weight: bold; margin-bottom: 8px; line-height: 1.4; }
-        .news-item .news-excerpt { font-size: 13px; color: #777; line-height: 1.6; }
+        .news-item .news-title { font-size: 15px; color: #2a3550; font-weight: bold; margin-bottom: 8px; line-height: 1.5; }
+        .news-item .news-title a { color: inherit; text-decoration: none; }
+        .news-item .news-title a:hover { color: #1e50ae; }
+        .news-item .news-excerpt { font-size: 13px; color: #777; line-height: 1.7; }
 
         /* 底部 */
-        .footer { background: #1a3a5c; color: #bbb; padding: 40px 0 20px; }
-        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 30px; }
-        .footer-col h3 { color: #fff; font-size: 16px; margin-bottom: 15px; }
-        .footer-col p, .footer-col a { font-size: 13px; color: #aaa; line-height: 1.8; text-decoration: none; }
-        .footer-col a:hover { color: #5ba3f5; }
-        .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #244d75; font-size: 12px; color: #888; }
+        .footer { background: #1a2b52; color: #b8c0d4; padding: 42px 0 18px; }
+        .footer-content { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 36px; margin-bottom: 30px; }
+        .footer-col h3 { color: #fff; font-size: 16px; margin-bottom: 15px; position: relative; padding-left: 12px; }
+        .footer-col h3::before { content: ""; position: absolute; left: 0; top: 4px; bottom: 4px; width: 4px; background: #1e50ae; border-radius: 2px; }
+        .footer-col p, .footer-col a { font-size: 13px; color: #aab4cc; line-height: 2; text-decoration: none; display: block; }
+        .footer-col a:hover { color: #6fa3f0; }
+        .footer-col .main-line { font-size: 14px; color: #d5dcec; line-height: 2; }
+        .footer-bottom { text-align: center; padding-top: 18px; border-top: 1px solid #2c4070; font-size: 12px; color: #7e8ab0; }
+        .footer-bottom a { color: #8ea6d6; text-decoration: none; }
 
         /* 微信浮动按钮 */
         .wechat-float-btn {
@@ -151,10 +189,18 @@
         }
         .copy-toast.show { opacity: 1; visibility: visible; }
 
-        @media (max-width: 768px) {
-            .quality-banner .cn-title { font-size: 32px; letter-spacing: 4px; }
-            .category-tabs .tab { padding: 12px 20px; font-size: 14px; }
-            .top-bar .container { flex-direction: column; gap: 5px; }
+        @media (max-width: 900px) {
+            .hero-banner { min-height: auto; }
+            .hero-banner .container { flex-direction: column; align-items: center; text-align: center; padding: 40px 0; }
+            .hero-right img { width: 320px; }
+            .footer-content { grid-template-columns: 1fr; gap: 24px; }
+        }
+        @media (max-width: 640px) {
+            .top-bar .container { flex-direction: column; }
+            .header-banner .brand-logo { font-size: 22px; letter-spacing: 2px; }
+            .hero-left .hero-slogan { font-size: 22px; }
+            .category-tabs .tab { padding: 12px 16px; font-size: 14px; }
+            .product-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
         }
     </style>
 </head>
@@ -179,39 +225,28 @@
         </div>
     </div>
 
-    <!-- 质量标语 -->
-    <div class="quality-banner">
+    <!-- 主视觉横幅 -->
+    <div class="hero-banner">
         <div class="container">
-            <div class="en-title">PROFESSIONAL QUALITY ASSURANCE</div>
-            <div class="cn-title">品质 <span class="highlight">精</span> 益求精</div>
-            <div class="tip">以诚为本 &nbsp; 保证及时供货 &nbsp; 让顾客满意</div>
-        </div>
-    </div>
-
-    <!-- 特性标签 -->
-    <div class="features">
-        <div class="container">
-            <div class="feature-list">
-                <div class="feature-item">
-                    <div class="icon">配</div>
-                    <div class="label">配水稳定</div>
+            <div class="hero-left">
+                <div class="hero-slogan">专业定制五金饰材<br>值得信赖</div>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <div class="icon"><img src="images/feature-icon.png" alt="配水稳定"></div>
+                        <div class="label">配水稳定</div>
+                    </div>
+                    <div class="hero-feature">
+                        <div class="icon"><img src="images/feature-icon.png" alt="防锈耐腐"></div>
+                        <div class="label">防锈耐腐</div>
+                    </div>
+                    <div class="hero-feature">
+                        <div class="icon"><img src="images/feature-icon.png" alt="轻便美观"></div>
+                        <div class="label">轻便美观</div>
+                    </div>
                 </div>
-                <div class="feature-item">
-                    <div class="icon">锈</div>
-                    <div class="label">防锈耐用</div>
-                </div>
-                <div class="feature-item">
-                    <div class="icon">腐</div>
-                    <div class="label">耐腐抗蚀</div>
-                </div>
-                <div class="feature-item">
-                    <div class="icon">轻</div>
-                    <div class="label">轻便安装</div>
-                </div>
-                <div class="feature-item">
-                    <div class="icon">美</div>
-                    <div class="label">美观大方</div>
-                </div>
+            </div>
+            <div class="hero-right">
+                <img src="images/brand-poster.png" alt="品质 精 益求精">
             </div>
         </div>
     </div>
@@ -220,11 +255,10 @@
     <div class="category-tabs">
         <div class="container">
             <div class="tab-list">
-                <div class="tab active">全部产品</div>
-                <div class="tab">不锈钢法兰</div>
-                <div class="tab">不锈钢快速接头</div>
-                <div class="tab">不锈钢非标定做</div>
-                <div class="tab">不锈钢分水器</div>
+                <div class="tab active" data-filter="all">全部产品</div>
+                <div class="tab" data-filter="flange">不锈钢法兰</div>
+                <div class="tab" data-filter="quick">不锈钢快速接头</div>
+                <div class="tab" data-filter="custom">不锈钢非标定做</div>
             </div>
         </div>
     </div>
@@ -235,92 +269,10 @@
             <div class="section-title">
                 <h2>产品展示</h2>
                 <div class="line"></div>
+                <p class="sub">PRODUCTS</p>
             </div>
-            <div class="product-grid">
-                <div class="product-card">
-                    <div class="img-wrap"><img src="images/1.jpg" alt="不锈钢分水器"></div>
-                    <div class="info">
-                        <h3>不锈钢分水器</h3>
-                        <p class="desc">优质不锈钢材质，耐腐蚀，使用寿命长，多种规格可选</p>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="img-wrap"><img src="images/2.jpg" alt="不锈钢快速接头E型"></div>
-                    <div class="info">
-                        <h3>不锈钢快速接头E型</h3>
-                        <p class="desc">快速连接，密封可靠，安装便捷，广泛应用于水暖系统</p>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="img-wrap"><img src="images/3.jpg" alt="不锈钢快速接头E型"></div>
-                    <div class="info">
-                        <h3>不锈钢快速接头E型</h3>
-                        <p class="desc">E型快速接头设计，连接牢固，操作简便</p>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="img-wrap"><img src="images/4.jpg" alt="不锈钢快速接头E型"></div>
-                    <div class="info">
-                        <h3>不锈钢快速接头E型</h3>
-                        <p class="desc">高品质不锈钢制造，防锈耐腐，经久耐用</p>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="img-wrap"><img src="images/5.jpg" alt="分水器"></div>
-                    <div class="info">
-                        <h3>分水器</h3>
-                        <p class="desc">分集水器专业生产，模块式设计，性能优越</p>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="img-wrap"><img src="images/6.jpg" alt="不锈钢分水器"></div>
-                    <div class="info">
-                        <h3>不锈钢分水器</h3>
-                        <p class="desc">整体不锈钢结构，承压能力强，运行稳定</p>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="img-wrap"><img src="images/7.jpg" alt="不锈钢快速接头E型"></div>
-                    <div class="info">
-                        <h3>不锈钢快速接头E型</h3>
-                        <p class="desc">精密加工，尺寸精准，互换性强</p>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="img-wrap"><img src="images/8.jpg" alt="不锈钢快速接头E型"></div>
-                    <div class="info">
-                        <h3>不锈钢快速接头E型</h3>
-                        <p class="desc">模块化设计，便于安装维护，降低成本</p>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="img-wrap"><img src="images/9.jpg" alt="不锈钢快速接头E型"></div>
-                    <div class="info">
-                        <h3>不锈钢快速接头E型</h3>
-                        <p class="desc">优质原材料，严格质量控制，品质保证</p>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="img-wrap"><img src="images/10.jpg" alt="不锈钢快速接头E型"></div>
-                    <div class="info">
-                        <h3>不锈钢快速接头E型</h3>
-                        <p class="desc">多种规格，可按需定制，满足不同需求</p>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="img-wrap"><img src="images/11.jpg" alt="不锈钢快速接头E型"></div>
-                    <div class="info">
-                        <h3>不锈钢快速接头E型</h3>
-                        <p class="desc">表面光滑美观，防锈抗腐，适合各种环境</p>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="img-wrap"><img src="images/12.jpg" alt="不锈钢快速接头E型"></div>
-                    <div class="info">
-                        <h3>不锈钢快速接头E型</h3>
-                        <p class="desc">成熟生产工艺，批量供货，交期及时</p>
-                    </div>
-                </div>
+            <div class="product-grid" id="productGrid">
+                <!-- 产品由 JS 渲染 -->
             </div>
         </div>
     </section>
@@ -334,13 +286,12 @@
             </div>
             <div class="about-content">
                 <div class="about-img">
-                    <img src="images/intro.png" alt="模块式PPO全塑分集水器">
+                    <img src="images/about-manifold.jpg" alt="模块式PPO全塑分集水器">
                 </div>
                 <div class="about-text">
                     <h2>佛山梅斯睿蒂科技有限公司</h2>
                     <p class="welcome">热忱欢迎国内外客商来我司洽谈合作</p>
-                    <p>佛山梅斯睿蒂科技有限公司致力于供暖系统配套产品的研发、生产和销售。其研发团队早在2000年就开始研究塑料管道系统的配套产品，是国内最早一批研究塑料管路系统和分集水器的团队，有丰富的产品研发应用经验。</p>
-                    <p>其团队最近研发的模块式PPO全塑分集水器，再一次吸引地暖人的眼光，引起同行强烈的反应。该款分集水器源自欧洲最新塑料应用专利技术，采用进口著名品牌原料，先进合理的结构和生产工艺，使其质量远远优于铜质分集水器，让国产的塑料分集水器进入高端产品的殿堂。</p>
+                    <p>佛山梅斯睿蒂科技有限公司致力于供暖系统配套产品的研发、生产和销售。其研发团队早在2000年就开始研究塑料管道系统的配套产品，是国内最早一批研究塑料管路系统和分集水器的团队，有丰富的产品研发应用经验，其团队最近研发的模块式PPO全塑分集水器，再一次吸引地暖人的眼光，引起同行强烈的反应。该款分集水器源自欧洲最新塑料应用专利技术，采用进口著名品牌原料，先进合理的结构和生产工艺，使其质量远远优于铜质分集水器，让国产的塑料分集水器进入高端产品的殿堂。</p>
                 </div>
             </div>
         </div>
@@ -352,31 +303,39 @@
             <div class="section-title">
                 <h2>新闻报道</h2>
                 <div class="line"></div>
-                <p style="color:#888; margin-top:10px;">聚焦行业热点 实时更新报道</p>
+                <p class="sub">聚焦行业热点 实时更新报道</p>
             </div>
             <div class="news-list">
                 <div class="news-item">
-                    <div class="news-img"><img src="images/2.jpg" alt="不锈钢混水罐"></div>
+                    <div class="news-img"><img src="images/product-5.jpg" alt="maysruidy不锈钢混水罐的运行原理"></div>
                     <div class="news-body">
                         <div class="news-date">2020-10-16</div>
-                        <div class="news-title">maysruidy不锈钢混水罐的运行原理</div>
-                        <p class="news-excerpt">不锈钢是一种常见机械工业用品，法兰又叫法兰凸缘盘。法兰是管子与管子之间相互连接的零件，用于管端之间的连接……</p>
+                        <div class="news-title"><a href="#news">maysruidy不锈钢混水罐的运行原理</a></div>
+                        <p class="news-excerpt">不锈钢是一种常见机械工业用品，法兰又叫法兰凸缘盘。法兰是管子与管子之间相互连接的零件，用于管端之间的连接;也有用在……</p>
                     </div>
                 </div>
                 <div class="news-item">
-                    <div class="news-img"><img src="images/intro.png" alt="紫外线杀菌器"></div>
+                    <div class="news-img"><img src="images/news-2.jpg" alt="紫外线杀菌器有哪些原理"></div>
                     <div class="news-body">
                         <div class="news-date">2020-10-16</div>
-                        <div class="news-title">紫外线杀菌器有哪些原理</div>
-                        <p class="news-excerpt">不锈钢法兰的金属性能良好，并且具有很强的耐腐蚀性，经常被用于在钢结构件中，比如不锈钢法兰等……</p>
+                        <div class="news-title"><a href="#news">紫外线杀菌器有哪些原理</a></div>
+                        <p class="news-excerpt">不锈钢法兰的金属性能良好，并且具有很强的耐腐蚀性，经常被用于在钢结构件中，比如不锈钢法兰等，不锈钢法兰也成为不锈耐……</p>
                     </div>
                 </div>
                 <div class="news-item">
-                    <div class="news-img"><img src="images/5.jpg" alt="不锈钢分水器"></div>
+                    <div class="news-img"><img src="images/news-3.jpg" alt="不锈钢分水器有哪些组成结构"></div>
                     <div class="news-body">
                         <div class="news-date">2020-10-16</div>
-                        <div class="news-title">不锈钢分水器有哪些组成结构</div>
+                        <div class="news-title"><a href="#news">不锈钢分水器有哪些组成结构</a></div>
                         <p class="news-excerpt">规格：1/2″～80″（DN10-DN5000）压力等级：0.25Mpa ～250Mpa（150Lb ～2500Lb）……</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-img"><img src="images/news-2.jpg" alt="分水器有哪些基本分类"></div>
+                    <div class="news-body">
+                        <div class="news-date">2020-10-16</div>
+                        <div class="news-title"><a href="#news">分水器有哪些基本分类</a></div>
+                        <p class="news-excerpt">不锈钢法兰（flange又叫法兰盘或突缘。是管子与管子相互连接的零件。连接于管端。法兰上有孔眼，可穿螺栓，使两法……</p>
                     </div>
                 </div>
             </div>
@@ -388,23 +347,26 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-col">
-                    <h3>关于我们</h3>
-                    <p>佛山梅斯睿蒂科技有限公司致力于供暖系统配套产品的研发、生产和销售，拥有丰富的产品研发应用经验。</p>
-                </div>
-                <div class="footer-col">
                     <h3>主营产品</h3>
-                    <p>去耦罐、耦合罐、水力分压器、黄曲霉素降解机、不锈钢分水器、混水缸、混水器、混水罐</p>
+                    <p class="main-line">专营去耦罐、耦合罐、水力分压器、黄曲霉素降解机、不锈钢分水器、混水缸、混水器、混水罐</p>
                 </div>
                 <div class="footer-col">
-                    <h3>联系我们</h3>
-                    <p>联系QQ：32325443<br>
-                    联系邮箱：fs-mei@163.com<br>
-                    联系电话：0757-83351180<br>
-                    联系地址：佛山市乐安乐城二路南20号</p>
+                    <h3>Products</h3>
+                    <a href="#news">不锈钢混水罐的运行原理</a>
+                    <a href="#news">不锈钢分水器有哪些组成结构</a>
+                    <a href="#news">紫外线杀菌器有哪些原理</a>
+                    <a href="#news">分水器有哪些基本分类</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p>联系QQ：32325443</p>
+                    <p>联系邮箱：fs-mei@163.com</p>
+                    <p>联系电话：0757-83351180</p>
+                    <p>联系地址：佛山市乐安乐城二路南20号</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                Copyright © 佛山梅斯睿蒂科技有限公司 版权所有
+                Copyright © 佛山梅斯睿蒂科技有限公司 版权所有 &nbsp;|&nbsp; 官网：<a href="http://maysruidy.com" target="_blank" rel="noopener">www.maysruidy.com</a>
             </div>
         </div>
     </footer>
@@ -437,6 +399,58 @@
     <div class="copy-toast" id="copy-toast">微信号已复制，去微信粘贴添加</div>
 
     <script>
+        /* ===== 产品数据（复刻官网产品展示） ===== */
+        var PRODUCTS = [
+            { id: 1, name: "不锈钢快速接头E型", img: "images/product-1.jpg" },
+            { id: 2, name: "不锈钢快速接头E型", img: "images/product-2.jpg" },
+            { id: 3, name: "不锈钢快速接头E型", img: "images/product-3.jpg" },
+            { id: 4, name: "不锈钢快速接头E型", img: "images/product-4.jpg" },
+            { id: 5, name: "不锈钢快速接头E型", img: "images/product-5.jpg" },
+            { id: 6, name: "不锈钢快速接头E型", img: "images/product-6.jpg" },
+            { id: 7, name: "不锈钢分水器", img: "images/product-7.jpg" },
+            { id: 8, name: "分水器", img: "images/product-8.jpg" }
+        ];
+
+        /* 各分类下产品的展示顺序（与官网标签页一致） */
+        var CATEGORY_ORDER = {
+            all:    [1, 2, 3, 4, 5, 6, 7, 8],
+            flange: [7, 3, 5, 4, 6, 2, 1, 8],
+            quick:  [7, 6, 5, 4, 3, 2, 1, 8],
+            custom: [5, 1, 4, 3, 2, 7, 6, 8]
+        };
+
+        function renderProducts(filter) {
+            var grid = document.getElementById('productGrid');
+            var ids = CATEGORY_ORDER[filter] || CATEGORY_ORDER.all;
+            var html = '';
+            ids.forEach(function (id) {
+                var p = null;
+                for (var i = 0; i < PRODUCTS.length; i++) {
+                    if (PRODUCTS[i].id === id) { p = PRODUCTS[i]; break; }
+                }
+                if (!p) return;
+                html += '<div class="product-card">' +
+                            '<div class="img-wrap"><img src="' + p.img + '" alt="' + p.name + '" loading="lazy"></div>' +
+                            '<div class="info"><h3>' + p.name + '</h3></div>' +
+                        '</div>';
+            });
+            grid.innerHTML = html;
+        }
+
+        /* 分类标签切换 */
+        document.querySelectorAll('.category-tabs .tab').forEach(function (tab) {
+            tab.addEventListener('click', function () {
+                document.querySelectorAll('.category-tabs .tab').forEach(function (t) {
+                    t.classList.remove('active');
+                });
+                this.classList.add('active');
+                renderProducts(this.getAttribute('data-filter'));
+            });
+        });
+
+        renderProducts('all');
+
+        /* ===== 微信弹窗 ===== */
         var WECHAT_ID = 'Mei32325443';
         var WECHAT_QR = 'images/wechat-qr.jpg';
         document.getElementById('wechat-id-text').textContent = WECHAT_ID;
@@ -482,16 +496,6 @@
                 fallbackCopy();
             }
         }
-
-        // 产品分类标签切换效果
-        document.querySelectorAll('.category-tabs .tab').forEach(function(tab) {
-            tab.addEventListener('click', function() {
-                document.querySelectorAll('.category-tabs .tab').forEach(function(t) {
-                    t.classList.remove('active');
-                });
-                this.classList.add('active');
-            });
-        });
     </script>
 </body>
 </html>
