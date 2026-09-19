@@ -18,6 +18,25 @@
         .top-bar a { color: #fff; text-decoration: none; margin-left: 15px; }
         .top-bar a:hover { text-decoration: underline; }
 
+        /* 顶部导航栏 */
+        html { scroll-behavior: smooth; }
+        .main-nav {
+            position: sticky; top: 0; z-index: 900;
+            background: #fff; border-bottom: 1px solid #e8ebf2;
+            box-shadow: 0 2px 8px rgba(20, 40, 90, 0.06);
+        }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; min-height: 58px; gap: 16px; flex-wrap: wrap; padding: 6px 0; }
+        .nav-logo { font-size: 17px; font-weight: bold; color: #1a2b52; text-decoration: none; letter-spacing: 1px; white-space: nowrap; }
+        .nav-logo:hover { color: #1e50ae; }
+        .nav-menu { display: flex; list-style: none; margin: 0; padding: 0; gap: 4px; flex-wrap: wrap; }
+        .nav-menu a {
+            display: block; padding: 8px 18px; color: #3a4560; text-decoration: none;
+            font-size: 15px; border-radius: 6px; transition: color 0.2s, background 0.2s;
+        }
+        .nav-menu a:hover { color: #1e50ae; background: #eef3fc; }
+        .nav-menu a.active { color: #fff; background: #1e50ae; }
+        section, footer { scroll-margin-top: 72px; }
+
         /* 头部横幅 */
         .header-banner { background: #fff; padding: 26px 0; text-align: center; border-bottom: 3px solid #1e50ae; }
         .header-banner .brand-logo { font-size: 28px; color: #1a2b52; letter-spacing: 4px; margin-bottom: 6px; font-weight: bold; }
@@ -197,6 +216,9 @@
         }
         @media (max-width: 640px) {
             .top-bar .container { flex-direction: column; }
+            .nav-inner { justify-content: center; text-align: center; }
+            .nav-menu { justify-content: center; }
+            .nav-menu a { padding: 6px 12px; font-size: 14px; }
             .header-banner .brand-logo { font-size: 22px; letter-spacing: 2px; }
             .hero-left .hero-slogan { font-size: 22px; }
             .category-tabs .tab { padding: 12px 16px; font-size: 14px; }
@@ -216,8 +238,22 @@
         </div>
     </div>
 
+    <!-- 顶部导航栏 -->
+    <nav class="main-nav" aria-label="主导航">
+        <div class="container nav-inner">
+            <a class="nav-logo" href="#home">佛山梅斯睿蒂科技有限公司</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">首页</a></li>
+                <li><a href="#about">公司简介</a></li>
+                <li><a href="#products">产品展示</a></li>
+                <li><a href="#news">新闻报道</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- 头部横幅 -->
-    <div class="header-banner">
+    <div class="header-banner" id="home">
         <div class="container">
             <div class="brand-logo">佛山梅斯睿蒂科技有限公司</div>
             <div class="brand-slogan">FOSHAN MAI SUI DI TECHNOLOGY CO., LTD.</div>
@@ -264,7 +300,7 @@
     </div>
 
     <!-- 产品展示区 -->
-    <section class="products-section">
+    <section class="products-section" id="products">
         <div class="container">
             <div class="section-title">
                 <h2>产品展示</h2>
@@ -278,7 +314,7 @@
     </section>
 
     <!-- 公司介绍 -->
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="container">
             <div class="section-title">
                 <h2>关于我们</h2>
@@ -298,7 +334,7 @@
     </section>
 
     <!-- 新闻资讯 -->
-    <section class="news-section">
+    <section class="news-section" id="news">
         <div class="container">
             <div class="section-title">
                 <h2>新闻报道</h2>
@@ -343,7 +379,7 @@
     </section>
 
     <!-- 底部 -->
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-col">
@@ -449,6 +485,26 @@
         });
 
         renderProducts('all');
+
+        /* ===== 导航栏滚动高亮 ===== */
+        var NAV_SECTIONS = ['home', 'about', 'products', 'news', 'contact'];
+        var navLinks = {};
+        document.querySelectorAll('.nav-menu a').forEach(function (a) {
+            navLinks[a.getAttribute('href').replace('#', '')] = a;
+        });
+        function updateNavHighlight() {
+            var scrollPos = window.scrollY + 100;
+            var current = 'home';
+            NAV_SECTIONS.forEach(function (id) {
+                var el = document.getElementById(id);
+                if (el && el.offsetTop <= scrollPos) current = id;
+            });
+            Object.keys(navLinks).forEach(function (id) {
+                if (navLinks[id]) navLinks[id].classList.toggle('active', id === current);
+            });
+        }
+        window.addEventListener('scroll', updateNavHighlight, { passive: true });
+        window.addEventListener('load', updateNavHighlight);
 
         /* ===== 微信弹窗 ===== */
         var WECHAT_ID = 'Mei32325443';
